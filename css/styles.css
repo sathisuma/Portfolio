@@ -23,7 +23,7 @@ nav,
 
 nav {
     text-align: center;
-    padding: 30px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
 }
 
 .nav-links {
@@ -40,7 +40,7 @@ ul li a {
     color: black;
     text-decoration: none;
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 ul li a:hover {
@@ -151,8 +151,9 @@ ul li a:hover {
 /***** SECTIONS *****/
 
 section {
-    height: 96vh;
-    margin: 4rem 10rem 0 10rem;
+    /* height: 96vh; */
+    margin: 0 8rem;
+    padding: 4rem 0 4rem 0;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -161,12 +162,12 @@ section {
     display: flex;
 }
 
-/***** Profile *****/
+/***** Profile Section *****/
 
-#profile {
+/* #profile {
     display: flex;
-    justify-content: center;   
-}
+    justify-content: center;
+} */
 
 .section_pic-container {
     display: flex;
@@ -183,11 +184,19 @@ section {
 
 .section_text p {
    font-weight: 600; 
+   color: rgb(98, 94, 94);
+
 }
 
 .section_text_p1 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.section_text_p2 {
+    font-size: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -204,8 +213,8 @@ section {
 }
 
 #social-container img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .icon {
@@ -219,12 +228,12 @@ section {
     gap: 1rem;
 }
 
-.btn {
+.button {
    font-weight: 600;
    transition: all 300ms ease;
-   padding: 1rem;
+   padding: 8px;
    width: 8rem;
-   border-radius: 2rem;
+   border-radius: 25px;
 
 }
 
@@ -233,17 +242,166 @@ section {
     border: 1px solid rgb(53, 53, 53);
 }
 
-.btn-colour-2,
+.btn-colour-2:hover
 .btn-colour-1:hover {
 background: rgb(53, 53, 53);
 color: white;
 }
 
 .btn-colour-1,
-.btn-colour-1:hover {
+.btn-colour-2:hover {
 background: rgb(53, 53, 53);
 color: white;
 }
+
+.btn-colour-1:hover {
+    background: black;
+}
+
+.btn-colour-2 {
+    background: none;
+}
+
+.btn-colour-2:hover {
+    border: 1px solid white;
+}
+
+/***** About Section *****/
+
+#about {
+    position: relative;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.about-containers,.about-details-container {
+    display: flex;
+}
+
+.arrow {
+   position: absolute;
+   right: -5rem;
+   bottom: 2.5rem; 
+}
+
+.details-container {
+    padding: 10px;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border:2px solid rgb(53, 53, 53);
+    text-align: center;
+}
+
+.section_container {
+    /* gap: 4rem; */
+    height: 80%;
+    margin:  50px auto ;
+}
+
+.about-pic {
+    margin: 20px auto 0 auto;
+    width: fit-content;
+    padding: 30px 20px;
+    font-size: 50px;
+    line-height: 5rem;
+    background-color: #313131;
+    color: white;
+    border-radius: 25px;
+}
+
+.experience-details-container {
+    display: flex;
+}
+
+.skill-icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+.skill-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; 
+    width: 100%;
+}
+
+.skill-details img {
+    /* margin: 10px; */
+    flex-grow: 2;
+}
+
+.skill-details p {
+    width: 50%;
+   flex-grow: 7;
+    padding: 5px 10px;
+    border-bottom:1px solid #313131;
+ 
+}
+
+
+
+
+
+
+
+
+/* Container for padding and center alignment */
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Center text alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Margin for top spacing */
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Margin for top spacing */
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+
+
+/* Skill item for flex layout and spacing */
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Icon styling */
+.icon {
+    margin-right: 1rem;
+    width: 24px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 767px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 
 
 
@@ -264,4 +422,9 @@ color: white;
     }
 
 
+}
+
+@media screen and (max-width:991px) {
+
+    
 }
