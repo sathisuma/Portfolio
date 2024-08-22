@@ -164,10 +164,6 @@ section {
 
 /***** Profile Section *****/
 
-/* #profile {
-    display: flex;
-    justify-content: center;
-} */
 
 .section_pic-container {
     display: flex;
@@ -183,8 +179,8 @@ section {
 }
 
 .section_text p {
-   font-weight: 600; 
-   color: rgb(98, 94, 94);
+    font-weight: 600;
+    color: rgb(98, 94, 94);
 
 }
 
@@ -218,8 +214,8 @@ section {
 }
 
 .icon {
-  cursor: pointer;
-  height: 2rem; 
+    cursor: pointer;
+    height: 2rem;
 }
 
 .btn-container {
@@ -229,11 +225,11 @@ section {
 }
 
 .button {
-   font-weight: 600;
-   transition: all 300ms ease;
-   padding: 8px;
-   width: 8rem;
-   border-radius: 25px;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 8px;
+    width: 8rem;
+    border-radius: 25px;
 
 }
 
@@ -242,16 +238,15 @@ section {
     border: 1px solid rgb(53, 53, 53);
 }
 
-.btn-colour-2:hover
-.btn-colour-1:hover {
-background: rgb(53, 53, 53);
-color: white;
+.btn-colour-2:hover .btn-colour-1:hover {
+    background: rgb(53, 53, 53);
+    color: white;
 }
 
 .btn-colour-1,
 .btn-colour-2:hover {
-background: rgb(53, 53, 53);
-color: white;
+    background: rgb(53, 53, 53);
+    color: white;
 }
 
 .btn-colour-1:hover {
@@ -283,14 +278,15 @@ color: white;
     gap: 2rem;
 }
 
-.about-containers,.about-details-container {
+.about-containers,
+.about-details-container {
     display: flex;
 }
 
 .arrow {
-   position: absolute;
-   right: -5rem;
-   bottom: 2.5rem; 
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
 }
 
 .details-container {
@@ -298,14 +294,14 @@ color: white;
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border:2px solid rgb(53, 53, 53);
+    border: 2px solid rgb(53, 53, 53);
     text-align: center;
 }
 
 .section_container {
     /* gap: 4rem; */
     height: 80%;
-    margin:  50px auto ;
+    margin: 50px auto;
 }
 
 .about-pic {
@@ -319,89 +315,110 @@ color: white;
     border-radius: 25px;
 }
 
-.experience-details-container {
-    display: flex;
+/**** Skill Section ****/
+
+#skills {
+    position: relative;
+}
+
+.skillset-container {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .skill-icon {
     cursor: pointer;
     height: 3rem;
+    width: 3rem;
 }
 
 .skill-details {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch; 
-    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-left: 50px;
 }
 
-.skill-details img {
-    /* margin: 10px; */
-    flex-grow: 2;
-}
 
 .skill-details p {
-    width: 50%;
-   flex-grow: 7;
-    padding: 5px 10px;
-    border-bottom:1px solid #313131;
- 
+    margin-left: 20px;
+    flex-grow: 7;
+    padding: 5px 0px;
+    border-bottom: 2px solid #aaa;
+
 }
 
+/**** Projects Section ****/
 
-
-
-
-
-
-
-/* Container for padding and center alignment */
-.container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+#projects {
+    position: relative;
 }
 
-/* Center text alignment */
-.text-center {
-    text-align: center;
+.color-container {
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
 }
 
-/* Margin for top spacing */
-.my-5 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
 }
 
-/* Margin for top spacing */
-.mt-4 {
-    margin-top: 1.5rem;
+.project-title {
+    margin: 1rem;
+    color: black;
 }
 
+.article-container {
+    margin-top: 10px;
+}
 
+/**** Contact Section ****/
 
-/* Skill item for flex layout and spacing */
-.skill-item {
+#contact {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
 }
 
-/* Icon styling */
-.icon {
-    margin-right: 1rem;
-    width: 24px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border:1px solid rgb(53, 53, 53);
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
 }
 
-/* Responsive design adjustments */
-@media (max-width: 767px) {
-    .col-md-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+.contact-info-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
 }
 
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-info-container p a {
+    color: black;
+}
+
+.contact-info-container p a:hover {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+/**** Footer Section ****/
 
 
 
@@ -424,7 +441,4 @@ color: white;
 
 }
 
-@media screen and (max-width:991px) {
-
-    
-}
+@media screen and (max-width:991px) {}
