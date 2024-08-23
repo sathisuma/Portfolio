@@ -173,6 +173,10 @@ section {
     justify-content: center;
 }
 
+.section_pic-container img {
+    border-radius: 50%;
+}
+
 .section_text {
     align-self: center;
     text-align: center;
@@ -265,6 +269,7 @@ section {
 
 #about {
     position: relative;
+    padding: 5rem 0 5rem 0;
 }
 
 .about-details-container {
@@ -273,9 +278,14 @@ section {
 }
 
 .about-containers {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     gap: 2rem;
+}
+
+.about-me-container {
+display: flex;
+justify-content: center;
 }
 
 .about-containers,
@@ -286,7 +296,7 @@ section {
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    /* bottom: 2.5rem; */
 }
 
 .details-container {
@@ -305,11 +315,11 @@ section {
 }
 
 .about-pic {
-    margin: 20px auto 0 auto;
+    margin: 35px auto 0 auto;
     width: fit-content;
     padding: 30px 20px;
     font-size: 50px;
-    line-height: 5rem;
+    line-height: 6rem;
     background-color: #313131;
     color: white;
     border-radius: 25px;
@@ -347,10 +357,15 @@ section {
 
 }
 
+.space {
+    margin: 2.5rem 0;
+}
+
 /**** Projects Section ****/
 
 #projects {
     position: relative;
+    padding: 5rem 0 5rem 0;
 }
 
 .color-container {
@@ -420,6 +435,18 @@ section {
 
 /**** Footer Section ****/
 
+footer {
+    height: 22vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer p a {
+    color: black;
+}
 
 
 
